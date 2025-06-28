@@ -1,0 +1,14 @@
+# Ignore Rust build files
+/assignment1/target/
+/assignment1/Cargo.lock
+
+# Ignore OS files
+.DS_Store
+Thumbs.db
+
+# Ignore IDE/editor configs
+.vscode/
+.idea/
+
+# Ignore other files or folders
+*.log
