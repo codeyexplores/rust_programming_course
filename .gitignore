@@ -1,14 +1,36 @@
-# Ignore Rust build files
+# Rust build artifacts
 /assignment1/target/
-/assignment1/Cargo.lock
+**/target/
+
+# Cargo package manager lock files
+**/Cargo.lock
+
+# If you are building docs
+**/doc/
+
+# Ignore debug files
+*.rmeta
+*.dSYM/
+*.dylib
+*.so
+*.exe
+
+# Ignore backup files
+*~
+*.swp
+*.swo
 
 # Ignore OS files
 .DS_Store
 Thumbs.db
 
-# Ignore IDE/editor configs
+# Ignore editor and IDE folders
 .vscode/
 .idea/
+*.iml
 
-# Ignore other files or folders
+# Logs
 *.log
+
+# Others
+*.tmp
