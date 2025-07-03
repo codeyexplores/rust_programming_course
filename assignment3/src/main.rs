@@ -76,7 +76,7 @@ fn increase_balance<T: Balance>(balance: &T, increament: u32) -> Result<u32, Str
 fn main() {
    // create user_account, and set his age as Option::None
    // You want to increase the user_account's balance by 11
-   let mut user_account = UserAccount::new("User".to_owned(), None);
+   let user_account = UserAccount::new("User".to_owned(), None);
    let res = increase_balance(&user_account, 11);
    // use a match, if the result of increase_balance is
    // - Ok: print "UserAccount balance increased to {}" where {} is the new balance value
@@ -92,4 +92,5 @@ fn main() {
    } else {
       println!("Error: Account age not set");
    }
+   println!("{}", user_account.name);
 }
