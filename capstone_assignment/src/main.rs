@@ -164,3 +164,11 @@ fn main() {
     // let tx = create_transactions_hashmap(&mut transactions);
     // println!("{:?}", tx);
 }
+
+// Notes from: cargo doc --open
+// Usage of `cargo doc`
+// Generates documentation for the current package and all of its dependencies.
+// The documentation is generated in the target/doc directory, and can be viewed in a web browser.
+// However, its size can be large for git uploads.
+// remote: error: File capstone_assignment/google-chrome-stable_current_amd64.deb is 112.70 MB; this exceeds GitHub's file size limit of 100.00 MB
+// remote: error: GH001: Large files detected. You may want to try Git Large File Storage - https://git-lfs.github.com.
